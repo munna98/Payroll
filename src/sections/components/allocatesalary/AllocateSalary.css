@@ -1,0 +1,129 @@
+.header-allocate-salary{
+    width: fit-content;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-allocate-salary{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.search{
+    width: 700px;
+}
+
+.month-picker{
+    max-width: 200px;
+    width:100%;
+    height: 60px;
+    background-color: #6b705c;
+    border-radius: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.basic-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 500;
+    width: fit-content;
+    padding-left: 10px ;
+    color: #6b705c;
+    background-color: #ffe8d6;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.basic-info p{
+    font-size: smaller;
+    margin-right: 20px;
+}
+
+.save-button{
+    margin-right: 20px;
+}
+
+.salary-card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.salary-card-container span{
+    margin: 10px;
+    font-size: 32px;
+}
+
+.salary-card-container label{
+    margin: 10px;
+}
+
+.salary-card{
+    width: 30%;
+    min-height: 340px;
+    background-image: linear-gradient(135deg,#6b705c6d, #6b705c);
+    margin-top: 20px;
+    border-radius: 6px;
+    box-shadow: 5px 5px  #5b5a5a40;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card-element{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #6b705cec;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    margin-left: 13px;
+    line-height: 0.5;
+}
+
+
+.card-element input{
+    width: 50%;
+    outline: none;
+    background-color: #6b705cec;
+}
+
+.card-element p{
+    padding-right: 10px;
+}
+
+.card-total{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(135deg,#cb997e, #224121); */
+    background-color: #535748;
+    border-radius: 10px;
+    margin-left: 14px;
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+.card-total h3{
+    margin: 10px;
+}
+
+
+.basic-info label{
+    font-weight: 500;
+}
