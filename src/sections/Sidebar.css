@@ -23,3 +23,8 @@
     align-items: center;
     justify-content: space-around;
 }
+
+.side-nav-section .active{
+    color: #cb997e;
+    font-weight: bold;
+  }
