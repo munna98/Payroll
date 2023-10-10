@@ -1,0 +1,14 @@
+.main-section{
+    min-width: 500px;
+      width:900px;
+      height: 500px;
+      background: #b7b7a4;
+      color: #ffe8d6;
+      height: 80vh;
+      padding: 10px;
+      border-radius: 10px;
+      margin: none;
+      margin-left: 30px;
+      box-shadow: 3px 8px 8px 8px #5b5a5a40;
+  }
+  

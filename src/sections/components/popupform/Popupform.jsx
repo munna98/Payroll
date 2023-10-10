@@ -1,19 +1,30 @@
-// EmployeeForm.js
+import React, { useState } from "react";
+import "./Popupform.css"; // Import the CSS stylesheet
 
-import React, { useState } from 'react';
-import './Popupform.css'; // Import the CSS stylesheet
+import { useContext } from "react";
+import { EmpContext } from "../../context/EmpContext";
 
 function EmployeeForm() {
+  // 1-only for add employee
+
+  const { employeeData, setEmployeeData } = useContext(EmpContext);
+
+  const checkEmployeeById = (id) => {
+    return employeeData.find((employee) => employee.empId === id);
+  };
+
+  // 1-only for add employee
+
   const [formData, setFormData] = useState({
-    name: '',
-    empId: '',
-    gender: 'male',
+    name: "",
+    empId: "",
+    gender: "male",
     isActive: true,
   });
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
-    const newValue = type === 'checkbox' ? checked : value;
+    const newValue = type === "checkbox" ? checked : value;
 
     setFormData({
       ...formData,
@@ -23,8 +34,16 @@ function EmployeeForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Do something with the form data, e.g., send it to an API or display it
-    console.log(formData);
+
+    // 2-only for add employee
+
+    if (checkEmployeeById(formData.empId)) {
+      alert(`An Employee with Id ${formData.empId} already present`);
+    } else {
+      setEmployeeData((prev) => [...prev, formData]);
+    }
+
+    // only for add employee
   };
 
   return (
@@ -57,7 +76,7 @@ function EmployeeForm() {
               type="radio"
               name="gender"
               value="male"
-              checked={formData.gender === 'male'}
+              checked={formData.gender === "male"}
               onChange={handleInputChange}
             />
             Male
@@ -67,7 +86,7 @@ function EmployeeForm() {
               type="radio"
               name="gender"
               value="female"
-              checked={formData.gender === 'female'}
+              checked={formData.gender === "female"}
               onChange={handleInputChange}
             />
             Female
@@ -75,13 +94,13 @@ function EmployeeForm() {
         </div>
         <div>
           <label>
+            Is Active
             <input
               type="checkbox"
               name="isActive"
               checked={formData.isActive}
               onChange={handleInputChange}
             />
-            Is Active
           </label>
         </div>
         <div>

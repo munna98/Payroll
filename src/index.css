@@ -68,6 +68,15 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+
+input:hover,input:focus {
+  border:solid 1px;
+  border-color: #cb997e;
+  border-radius: 4px;
+  padding: 4px;
+  margin-left: 4px;
+}
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -80,17 +89,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-
-.main-section{
-  min-width: 500px;
-    width:900px;
-    height: 500px;
-    background: #b7b7a4;
-    color: #ffe8d6;
-    height: 80vh;
-    padding: 10px;
-    border-radius: 10px;
-    margin: none;
-    margin-left: 30px;
-    box-shadow: 3px 8px 8px 8px #5b5a5a40;
-}
