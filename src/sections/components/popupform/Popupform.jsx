@@ -38,7 +38,7 @@ function EmployeeForm() {
     // 2-only for add employee
 
     if (checkEmployeeById(formData.empId)) {
-      alert(`An Employee with Id ${formData.empId} already present`);
+      alert(`An Employee with Id ${formData.empId} already exist`);
     } else {
       setEmployeeData((prev) => [...prev, formData]);
     }

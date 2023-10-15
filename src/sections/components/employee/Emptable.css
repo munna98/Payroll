@@ -26,4 +26,15 @@ td {
     border-radius: 4px;
     background-color: #6b705c6d;
     height: 40px;
+    cursor: pointer;
+}
+tbody:hover{
+
+    background-color: #1617142c;
+    transition: 0.3s;
+}
+.emp-table .active{
+
+    background-color: #6b705c99;
+    transition: 0.3s;
 }

@@ -72,10 +72,11 @@
 .salary-card{
     width: 30%;
     min-height: 340px;
-    background-image: linear-gradient(135deg,#6b705c6d, #6b705c);
+    /* background-image: linear-gradient(135deg,#6b705c6d, #6b705c); */
+    background-color: #6b705c6d;
     margin-top: 20px;
     border-radius: 6px;
-    box-shadow: 5px 5px  #5b5a5a40;
+    box-shadow: 5px 5px  #0d100e40;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,7 +89,7 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    background-color: #6b705cec;
+    background-color: #6b705c;
     border-radius: 4px;
     margin-bottom: 4px;
     margin-left: 13px;
@@ -99,7 +100,7 @@
 .card-element input{
     width: 50%;
     outline: none;
-    background-color: #6b705cec;
+    background-color: #6b705c;
 }
 
 .card-element p{
@@ -113,7 +114,7 @@
     justify-content: center;
     align-items: center;
     /* background-image: linear-gradient(135deg,#cb997e, #224121); */
-    background-color: #535748;
+    background-color: #6b705c;
     border-radius: 10px;
     margin-left: 14px;
     margin-top: 8px;

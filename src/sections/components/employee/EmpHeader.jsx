@@ -1,11 +1,18 @@
-import React from "react";
+import React, {useContext} from "react";
 import Popup from "reactjs-popup";
 import EmployeeForm from "../popupform/Popupform";
 import './EmpHeader.css'
 import { Search } from "../Search";
 
+import { EmpContext } from "../../context/EmpContext";
+
 
 export default function EmpHeader() {
+
+
+const {deleteEmployee,activeRow,activeEmployee} = useContext(EmpContext)
+
+
 
   return (
     <>
@@ -39,8 +46,8 @@ export default function EmpHeader() {
           position="top right "
         >
           <div className="delete-warninig">
-          <span>U Are Deleting Munna..!</span>
-          <button>Yes</button>
+          <span>U Are Deleting {activeEmployee}..!</span>
+          <button onClick={()=>deleteEmployee(activeRow)}>Yes</button>
           </div>
         </Popup>
       </div>
